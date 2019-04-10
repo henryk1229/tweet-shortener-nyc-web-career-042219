@@ -31,7 +31,7 @@ def selective_tweet_shortener(tweet)
 end
 
 def shortened_tweet_truncator(tweet)
-  selective_tweet_shortener(tweet) ? tweet[0..137] : tweet 
+  selective_tweet_shortener(tweet) ? tweet[0..139] : tweet 
 end
 
 
