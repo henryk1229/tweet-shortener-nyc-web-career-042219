@@ -13,5 +13,7 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  
+  dictionary.each do |key, value|
+    if key == tweet.to_a.any?
+      
   
