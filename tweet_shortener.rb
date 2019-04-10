@@ -27,7 +27,7 @@ def bulk_tweet_shortener(tweets)
 end
 
 def selective_tweet_shortener(tweet)
-  tweet.index(140) != nil ? word_substituter(tweet) : tweet
+  tweet.length  ? word_substituter(tweet) : tweet
 end
   
       
