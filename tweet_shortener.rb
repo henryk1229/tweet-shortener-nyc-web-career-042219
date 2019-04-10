@@ -26,10 +26,8 @@ def bulk_tweet_shortener(tweets)
   end
 end
 
-def selective_tweet_shortener(tweets)
-  tweets.map do |tweet|
-    tweet.index(140) != nil ? word_substituter(tweet) : tweet
-  end
+def selective_tweet_shortener(tweet)
+  tweet.index(140) != nil ? word_substituter(tweet) : tweet
 end
   
       
