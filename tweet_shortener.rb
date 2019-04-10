@@ -28,7 +28,7 @@ end
 
 def selective_tweet_shortener(tweets)
   tweets.each do |tweet|
-    tweet.index(140) ? word_substituter(tweet) : tweet
+    tweet.index(140) != nil ? word_substituter(tweet) : tweet
   end
 end
   
