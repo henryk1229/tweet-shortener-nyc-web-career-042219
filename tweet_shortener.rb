@@ -15,7 +15,7 @@ end
 def word_substituter(tweet)
   array = tweet.split(/ /)
   dictionary.each do |key, value|
-    array.map { |string| string == key ? string == value : string }
+    array.map { |string| string == key.to_s ? string = value : string }
   end
   array.join(" ") 
 end
