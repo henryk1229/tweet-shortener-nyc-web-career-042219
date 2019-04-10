@@ -13,7 +13,7 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  tweet.to_a 
+  tweet.to_ary 
   dictionary.each do |key, value|
     tweet.map { |string| string == key.to_s ? string == value : string }
   end
