@@ -13,9 +13,9 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  tweet.scan(/\w/) 
+  array = tweet.split(//)
   dictionary.each do |key, value|
-    tweet.map { |string| string == key.to_s ? string == value : string }
+    array.map { |string| string == key.to_s ? string == value : string }
   end
   tweet.to_s 
 end
