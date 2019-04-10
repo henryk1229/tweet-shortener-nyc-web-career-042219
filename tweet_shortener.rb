@@ -14,8 +14,8 @@ end
 
 def word_substituter(tweet)
   tweet.to_a 
-  dictionary.map do |key, value|
-    
+  dictionary.each do |key, value|
+    tweet.map 
     
       
   
